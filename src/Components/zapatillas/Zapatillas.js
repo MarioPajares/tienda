@@ -8,18 +8,20 @@ export const Zapatillas = ({
   increment,
   decrement,
 }) => {
+
   const {
     state: estado,
     increment: incrementar,
     decrement: decrementar,
   } = useCounter();
+
   const handleAdd = () => {
-    // increment();
-    incrementar();
+     increment();
+     incrementar();
   };
 
   const handleLessOne = () => {
-    // decrement();
+    decrement();
     decrementar();
   };
 
@@ -31,13 +33,11 @@ export const Zapatillas = ({
         <p>{estado}</p>
         <div className="d-flex">
           <button className="btn btn-primary col-6" onClick={handleAdd}>
-            {" "}
             +
           </button>
 
           {
             <button className="btn btn-info col-6" onClick={handleLessOne}>
-              {" "}
               -
             </button>
           }

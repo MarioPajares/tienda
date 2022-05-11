@@ -26,7 +26,7 @@ export const Tienda = () => {
             state={state}
             increment={increment}
             decrement={decrement}
-            key={id + Math.random()}>
+            key={id}>
           </Zapatillas>
         ))}
       </div>
